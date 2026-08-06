@@ -251,3 +251,31 @@ GitHub: https://github.com/KanchanDhote015
 ## 📄 License
 
 This project is developed for educational and portfolio purposes.
+
+---
+
+## 📸 Project Screenshots
+
+### Client Portal
+
+| Home Page | Contact Us |
+|------------|------------|
+| ![](./screenshots/Home%20Page.png) | ![](./screenshots/Contact%20US.png) |
+
+| Footer |
+|---------|
+| ![](./screenshots/Footer.png) |
+
+---
+
+### Admin Panel
+
+| Login | Dashboard |
+|--------|-----------|
+| ![](./screenshots/Admin%20Authentication.png) | ![](./screenshots/Admin%20Dashboard.png) |
+
+| Services | News |
+|----------|------|
+| ![](./screenshots/Admin%20Services.png) | ![](./screenshots/Admin%20News.png) |
+
+> **Admin Features:** Secure authentication, dashboard analytics, service management, news management, gallery management, contact management, temporary delete (Trash), restore, permanent delete, and automatic frontend synchronization.
