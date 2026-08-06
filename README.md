@@ -67,23 +67,42 @@ CA-Portal/
 │
 ├── frontend/
 │   ├── src/
-│   │   ├── Components/
-│   │   ├── Pages/
-│   │   ├── Assets/
-│   │   ├── Layout/
-│   │   └── App.jsx
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── layouts/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   └── package.json
+│
+├── admin/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── layouts/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   ├── App.jsx
+│   │   └── main.jsx
 │   └── package.json
 │
 ├── backend/
-│   ├── Controllers/
-│   ├── Models/
-│   ├── Routes/
-│   ├── Middleware/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── config/
 │   ├── uploads/
+│   ├── utils/
 │   ├── server.js
-│   └── package.json
+│   ├── package.json
+│   └── .env
 │
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
