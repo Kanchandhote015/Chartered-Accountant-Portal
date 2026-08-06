@@ -1,0 +1,264 @@
+/* BASE */
+.about-page {
+  background-color: #8cabc3d3;
+  font-family: "Segoe UI", sans-serif;
+  color: #0b2f45;
+}
+
+/* HERO */
+.about-hero {
+  text-align: center;
+  padding: 80px 20px 50px;
+}
+
+.about-hero h1 {
+    font-size: 40px;
+  font-weight: 550;
+  color: #0f4c75;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+    color: #555;
+  font-size: 16px;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* WHO WE ARE – BOX LAYOUT */
+.about-who {
+  padding-bottom: 40px; 
+}  
+
+.about-who-box {
+  max-width: 1200px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* TEXT */
+.about-who-text h2 {
+  font-size: 40px;
+  color: #0f4c75;
+  margin-bottom: 20px;
+}
+
+.about-who-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* IMAGE */
+.about-who-image img {
+  margin-top: 50px;
+  width: 100%;
+  height: 80%;
+  object-fit: fill;
+  border-radius: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .about-who-box {
+    grid-template-columns: 1fr;
+    padding: 35px;
+  }
+
+  .about-who-image img {
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-who-text h2 {
+    font-size: 26px;
+  }
+
+  .about-who-text p {
+    font-size: 15px;
+  }
+}
+
+/* MISSION & VISION */
+.about-mv {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-mv h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #0f4c75;
+}
+
+.mv-cards {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.mv-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+.mv-card span {
+  font-size: 30px;
+}
+
+.mv-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0 10px;
+  color: #0f4c75;
+}
+
+.mv-card p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.mission {
+  border-top: 5px solid #0f4c75;
+}
+
+.vision {
+  border-top: 5px solid #0f4c75;
+}
+
+/* KEY STRENGTHS & CAPABILITIES */
+.about-strengths-only {
+  padding: 80px 60px;
+  background-color: #7099b2;
+}
+
+.about-strengths-only h2 {
+  font-size: 34px;
+  /* font-weight: 600; */
+  color: #044774;
+  margin-bottom: 25px;
+}
+
+/* Bullet list */
+.strengths-bullets {
+  padding-left: 22px;
+}
+
+.strengths-bullets li {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  color: #222;
+}
+
+.strengths-bullets strong {
+  color: #000;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .about-strengths-only h2 {
+    font-size: 26px;
+  }
+
+  .strengths-bullets li {
+    font-size: 15px;
+  }
+}
+
+
+/* WHAT WE DO + WHY CHOOSE US */
+.about-work-why {
+  padding: 80px 140px;
+}
+
+.about-work-why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* Shared list styling */
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.about-list li {
+  font-size: 17px;
+  margin-bottom: 14px;
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.about-list li::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  color: #0f4c75;
+}
+
+/* Headings */
+.about-work h2,
+.about-why-text h2 {
+  font-size: 34px;
+  color: #0f4c75;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .about-work-why-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-work h2,
+  .about-why-text h2 {
+    font-size: 28px;
+  }
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .mv-cards,
+  .services-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .why-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-mv h2,
+  .about-why h2 {
+    font-size: 28px;
+  }
+
+  .why-cards {
+    grid-template-columns: 1fr;
+  }
+}

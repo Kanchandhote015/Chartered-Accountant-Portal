@@ -1,0 +1,115 @@
+.admin-container {
+  display: flex;
+}
+
+/* ===== SIDEBAR ===== */
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #1f2a3a;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+  transition: 0.3s ease;
+}
+
+.admin-sidebar p {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.logout-btn {
+  margin-top: 15px;
+  padding: 8px 12px;
+  border: none;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.admin-content {
+  margin-left: 250px;
+  padding: 40px;
+  width: 100%;
+}
+
+/* ===== MOBILE TOP BAR ===== */
+.mobile-topbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1f2a3a;
+  color: white;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 992px) {
+
+  .mobile-topbar {
+    display: flex;
+    padding: 4px;
+  }
+
+  .admin-sidebar {
+    left: -100%;
+    z-index: 999;
+  }
+
+  .admin-sidebar.active {
+    left: 0;
+  }
+
+  .admin-content {
+    margin-left: 0;
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .mobile-topbar h3 {
+  font-size: 24px;
+  padding-right: 40px;
+  }
+
+  .hamburger {
+    font-size: 26px;
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,172 @@
+.news-admin-container {
+  padding: 20px;
+  padding-top: 1px;
+}
+
+.news-admin-container h2 {
+  font-size: 34px;
+  padding-bottom: 10px;
+}
+
+.news-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+  /* max-width: 600px; */
+}
+
+.news-form input,
+.news-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.add-btn {
+  background: #1e293b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.add-btn:hover {
+  background: #050911;
+}
+
+.news-list-admin {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* .news-card-admin {
+  background: #dee5eb76;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.news-card-admin {
+  background: #dee5eb76;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.news-card-admin > div {
+  flex: 1;
+}
+
+/* .delete-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  width: auto;          /* 🔥 IMPORTANT */
+  white-space: nowrap;  /* Prevent stretching */
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+/* ================= HEADER WITH TRASH ================= */
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.trash-btn {
+  background: #1e293b;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.trash-btn:hover {
+  background: #0f172a;
+}
+
+/* ================= TRASH SECTION ================= */
+.trash-section {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 2px solid #e2e8f0;
+}
+
+.trash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close-trash {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close-trash:hover {
+  background: #b91c1c;
+}
+
+/* ================= TRASH ACTION BUTTONS ================= */
+.trash-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.restore-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.restore-btn:hover {
+  background: #15803d;
+}
+
+.permanent-btn {
+  background: #7f1d1d;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.permanent-btn:hover {
+  background: #5f0f0f;
+}

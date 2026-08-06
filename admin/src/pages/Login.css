@@ -1,0 +1,89 @@
+/* Full screen background */
+.login-wrapper {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Card */
+.login-card {
+  background: #ffffff;
+  width: 380px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Title */
+.login-title {
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.login-subtitle {
+  font-size: 16px;
+  color: #566478;
+  margin-bottom: 30px;
+}
+
+/* Input Group */
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-size: 16px;
+  color: #12171f;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input-group input {
+  width: 94%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-btn:hover {
+  background: #1944b9;
+}
+
+/* Error */
+.login-error {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}

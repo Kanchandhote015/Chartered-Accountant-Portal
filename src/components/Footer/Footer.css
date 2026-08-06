@@ -1,0 +1,206 @@
+/* MAP */
+.footer-map iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+
+/* FOOTER */
+.footer {
+  background: #0f4c75;
+  color: #ffffff;
+  padding: 20px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 8px;
+}
+
+.footer-col p {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.footer-col ul li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* CONTACT ROW */
+.footer-contact-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-contact-row p {
+  font-size: 16px;
+}
+
+/* Make both equal width */
+.footer-contact-row > div {
+  flex: 1;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  background: #033251;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 15px;
+  color: #719dba;
+}
+
+.footer-bottom span {
+  color: #ffd166;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .footer-col h3 {
+    font-size: 18px;
+}
+
+  /* About Us – full width */
+  .footer-col:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  /* Our Services – left */
+  .footer-col:nth-child(2) {
+    grid-column: span 1;
+  }
+
+  /* Quick Links – right */
+  .footer-col:nth-child(3) {
+    grid-column: span 1;
+  }
+
+  /* Contact – full width */
+  .footer-col:nth-child(4) {
+    grid-column: span 2;
+  }
+
+  .footer-map iframe {
+    height: 220px;
+  }
+
+  .footer-contact-row {
+    flex-direction: row;
+  }
+
+  .footer-contact-row > div {
+    flex: 1;
+  }
+
+  .footer-contact-row p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .footer-contact-row .phone {
+    margin-right: -70px;
+  }
+}
+
+
+.footer-col ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-col ul li svg {
+  font-size: 16px;
+  color: #aed0e5; /* accent color */
+  flex-shrink: 0;
+}
+
+.footer-col ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-col ul li:hover svg {
+  transform: translateX(3px);
+  transition: 0.3s ease;
+}
+
+.footer-col ul li:hover svg {
+  color: #ffffff;
+}
+
+.footer-icon {
+  color: #ffffff;  
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.footer-contact-row p strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.footer-contact-item strong {
+  font-weight: 600;
+}
+
+.footer-col p {
+  margin-left: 26px; /* aligns text under heading nicely */
+}

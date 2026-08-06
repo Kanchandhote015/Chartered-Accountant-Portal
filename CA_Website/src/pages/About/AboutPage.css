@@ -1,0 +1,317 @@
+/* ================= BASE ================= */
+.about-page {
+  font-family: "Segoe UI", sans-serif;
+  color: #0b2f45;
+}
+
+/* ================= HERO ================= */
+.about-hero {
+  text-align: center;
+  justify-content: center;
+  min-height: 55vh;
+  padding: 80px 20px 80px;
+    background: linear-gradient(
+      rgba(11, 44, 69, 0.85),
+      rgba(11, 44, 69, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 17px;
+  max-width: 650px;
+  margin: auto;
+  color: #e5e5e5;
+}
+
+/* ================= WHO WE ARE ================= */
+.about-who {
+  position: relative;
+  padding: 30px 50px 40px;
+}
+
+.about-who::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.about-who-box {
+  max-width: 1200px;
+  margin: auto;
+  background: #f2f7fb;
+  border-radius: 16px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* TEXT */
+.about-who-text h2 {
+  font-size: 40px;
+  color: #0f4c75;
+  margin-bottom: 20px;
+}
+
+.about-who-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* IMAGE */
+.about-who-image img {
+  margin-top: 50px;
+  width: 100%;
+  height: 80%;
+  object-fit: fill;
+  border-radius: 14px;
+}
+
+/* ================= MISSION & VISION – ALTERNATE STYLE ================= */
+
+.about-mv-alt {
+  background: #eef4f8;
+  padding: 40px 20px;
+}
+
+.about-mv-alt .about-inner {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.mv-heading {
+  text-align: center;
+  font-size: 38px;
+  color: #0f4c75;
+  margin-bottom: 60px;
+}
+
+.mv-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* ICON + HEADING SIDE BY SIDE */
+.mv-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.mv-title span {
+  font-size: 28px;
+  color: #044774;
+  display: flex;
+  align-items: center;
+}
+
+.mv-title h3 {
+  font-size: 26px;
+  color: #044774;
+}
+
+.mv-block p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 14px;
+}
+
+/* Vertical divider */
+.mv-divider {
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #0f4c75,
+    transparent
+  );
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .mv-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .mv-divider {
+    display: none;
+  }
+
+  .mv-heading {
+    font-size: 30px;
+  }
+
+  .mv-block h3 {
+    font-size: 22px;
+  }
+
+  .mv-block p {
+    font-size: 16px;
+  }
+}
+
+
+/* ================= KEY STRENGTHS ================= */
+.about-strengths-only {
+  padding: 60px 60px 30px;
+  background-color: #fcfcfdcc;
+}
+
+.about-strengths-only h2 {
+  font-size: 34px;
+  color: #044774;
+  margin-bottom: 25px;
+}
+
+.strengths-bullets {
+  padding-left: 22px;
+}
+
+.strengths-bullets li {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  color: #222;
+}
+
+.strengths-bullets strong {
+  font-weight: 600;
+  color: #000;
+}
+
+/* ================= WHAT WE DO + WHY ================= */
+.about-work-why {
+  padding: 30px 120px;
+  background: #8cabc3d3;
+}
+
+.about-work-why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.about-list li {
+  font-size: 17px;
+  margin-bottom: 14px;
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.about-list li::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  color: #0f4c75;
+}
+
+.about-work h2,
+.about-why-text h2 {
+  font-size: 34px;
+  color: #0f4c75;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+
+  .about-who-box {
+    grid-template-columns: 1fr;
+    padding: 35px;
+  }
+
+  .about-work-why-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .mv-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-work h2,
+  .about-why-text h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero {
+    border-bottom: 1px solid #8cabc3d3;
+}
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-who-text h2 {
+    font-size: 26px;
+  }
+
+  .about-who-text p,
+  .strengths-bullets li {
+    font-size: 15px;
+  }
+
+  .about-mv h2 {
+    font-size: 28px;
+  }
+
+  .about-who {
+    padding: 0px;
+  }
+
+  .about-strengths-only {
+    padding: 15px 10px 7px;
+  }
+
+  .about-work-why {
+    padding: 30px 30px 30px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .about-hero {
+    min-height: 40vh;
+  }
+
+  .about-who-image {
+    margin-top: -60px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .about-hero {
+    min-height: 32vh;
+  }
+
+  .about-who-image {
+    margin-top: -60px;
+  }
+}

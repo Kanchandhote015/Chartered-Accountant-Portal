@@ -1,0 +1,151 @@
+.service-detail {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HERO */
+.service-hero {
+  background: linear-gradient(135deg, #0f4c75, #3282b8);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.service-hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.service-hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* CONTENT */
+.service-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px 50px;
+}
+
+/* OVERVIEW */
+.service-description {
+  margin-bottom: 50px;
+}
+
+.service-description h2 {
+  color: #0f4c75;
+  margin-bottom: 15px;
+}
+
+/* 2 COLUMN SECTION */
+.service-bottom-row {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* LEFT */
+.service-highlights {
+  flex: 1;
+}
+
+.service-highlights h2 {
+  color: #0f4c75;
+  margin-bottom: 15px;
+}
+
+.service-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-highlights li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* RIGHT IMAGE */
+.service-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-image img {
+  width: 100%;
+  max-width: 480px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* BACK LINK */
+.service-back-bar {
+  background: #ffffff;
+  padding: 12px 20px;
+}
+
+.service-back-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.service-back-link {
+  font-size: 14px;
+  color: #053656;
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid #0f4c75;
+  padding: 8px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.service-back-link:hover {
+  background-color: #0f4c75;
+  color: #ffffff;
+}
+
+/* CTA */
+.service-cta {
+  margin-top: 25px;
+}
+
+.cta-btn {
+  background: #0f4c75;
+  color: white;
+  padding: 14px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #062a40;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .service-bottom-row {
+    flex-direction: column;
+  }
+
+  .service-image img {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-hero h1 {
+    font-size: 30px;
+  }
+
+  .service-hero p {
+    font-size: 16px;
+  }
+}

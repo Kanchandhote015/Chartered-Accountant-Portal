@@ -1,0 +1,180 @@
+.gallery-admin-container {
+  padding: 20px;
+  padding-top: 1px;
+}
+
+.gallery-admin-container h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trash-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.trash-btn:hover {
+  background: #b91c1c;
+}
+
+/* FORM (same as news) */
+.news-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.news-form input,
+.news-form textarea,
+.news-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  height: 42px;
+  background: #fff;
+}
+
+.news-form textarea {
+  height: 90px;
+  resize: none;
+}
+
+.add-btn {
+  background: #1e293b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.add-btn:hover {
+  background: #050911;
+}
+
+/* SECTION TITLE */
+.gallery-section-title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* GRID */
+.gallery-grid-admin {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.gallery-card-admin {
+  background: #f1f5f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGE */
+.gallery-thumb img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* HEADER (Title + Badge in same line) */
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.gallery-info h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* BADGE */
+.badge {
+  padding: 3px 8px;
+  font-size: 11px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.badge.photo {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badge.video {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  width: 100%;
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 0 0 12px 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+.trash-actions {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.restore-btn {
+  flex: 1;
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.restore-btn:hover {
+  background: #15803d;
+}
+
+.permanent-btn {
+  flex: 1;
+  background: #7f1d1d;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.permanent-btn:hover {
+  background: #450a0a;
+}

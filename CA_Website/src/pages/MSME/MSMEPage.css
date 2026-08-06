@@ -1,0 +1,367 @@
+/* BASE */
+.msme-page {
+  font-family: "Segoe UI", sans-serif;
+  color: #0b2f45;
+}
+
+/* HERO */
+.msme-hero {
+  min-height: 55vh;
+  background: linear-gradient(
+      rgba(11, 44, 69, 0.85),
+      rgba(11, 44, 69, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.msme-hero-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+.msme-hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.msme-hero p {
+  font-size: 17px;
+  color: #e5e5e5;
+}
+
+/* OVERVIEW */
+.msme-overview {
+  background: #dcf2fed0;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.msme-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.msme-overview h2 {
+  font-size: 36px;
+  color: #0f4c75;
+  margin-bottom: 14px;
+}
+
+.msme-overview p {
+  max-width: 1000px;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* OVERVIEW – ENHANCED */
+.msme-overview-lead p{
+  max-width: 900px;
+  margin: 0 auto 18px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.msme-overview-text {
+  max-width: 900px;
+  margin: 0 auto 35px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* FOCUS LINE */
+.msme-overview-focus {
+  margin-top: 25px;
+}
+
+.msme-overview-focus span {
+  display: block;
+  font-size: 16px;
+  font-weight: 550;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #0f4c75;
+  margin-bottom: 6px;
+}
+
+.msme-overview-focus p {
+  font-size: 15.5px;
+  color: #0b2f45;
+}
+
+
+/* SERVICES */
+.msme-services {
+  padding: 40px 20px 60px;
+  background: #f2f4f7;
+}
+
+.msme-section-title {
+  font-size: 34px;
+  color: #0f4c75;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.msme-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.msme-service-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.msme-service-card h3 {
+  font-size: 19px;
+  font-weight: bold;
+  color: #0f4c75;
+  margin-bottom: 10px;
+}
+
+.msme-service-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* OUR APPROACH */
+.msme-approach {
+  background: #f0f7fb;
+  padding: 40px 20px 80px;
+}
+
+.msme-approach h2 {
+  text-align: center;
+  font-size: 38px;
+  color: #0f4c75;
+  margin-bottom: 40px;
+}
+
+.msme-approach-steps {
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 55px;
+  text-align: center;
+}
+
+.msme-approach-steps span {
+  display: inline-block;
+  background: #0f4c75;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.msme-approach-steps p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* ============================= */
+/* MSME APPROACH – FLOW ARROWS */
+/* ============================= */
+
+.msme-approach-steps > div {
+  position: relative;
+}
+
+/* Arrow between steps */
+.msme-approach-steps > div::after {
+  content: "→";
+  position: absolute;
+  top: 45px;                 /* aligns with number circle */
+  right: -35px;              /* space between cards */
+  font-size: 26px;
+  font-weight: 600;
+  color: #0f4c75;
+}
+
+/* Remove arrow from last step */
+.msme-approach-steps > div:last-child::after {
+  content: none;
+}
+
+@media (max-width: 992px) {
+  .msme-approach-steps {
+    grid-template-columns: 1fr;   /* single column */
+    gap: 28px;
+  }
+
+  /* remove arrows on tablet & mobile */
+  .msme-approach-steps > div::after {
+    content: none;
+  }
+
+  .msme-approach-steps p {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+
+/* VALUE */
+.msme-value {
+  background: #8cabc3d3;
+  padding: 80px 20px;
+}
+
+.msme-value h2 {
+  font-size: 36px;
+  color: #0f4c75;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.msme-container p {
+    color: #035b75;
+}
+
+.msme-value-list {
+  max-width: 800px;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+}
+
+.msme-value-list li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  padding-left: 76px;
+  position: relative;
+}
+
+.msme-value-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  padding-left: 55px;
+  color: #0f4c75;
+}
+
+.msme-value-intro {
+  max-width: 850px;
+  margin: 0 auto 30px;
+  font-size: 17.5px;
+  line-height: 1.8;
+  color: #0b2f45;
+  text-align: center;
+}
+
+
+/* ============================= */
+/* MSME APPROACH – RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 992px) {
+  .msme-approach-steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .msme-approach {
+    padding: 60px 16px;
+  }
+
+  .msme-approach h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .msme-approach-steps {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .msme-approach-steps div {
+    text-align: center;
+  }
+
+  .msme-approach-steps span {
+    margin-bottom: 8px;
+  }
+
+  .msme-approach-steps p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
+/* CTA */
+.msme-cta {
+  background: #0f4c75;
+  color: #ffffff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.msme-cta h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.msme-cta p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #e5e5e5;
+}
+
+.msme-cta-btn {
+  background: #ffffff;
+  color: #0f4c75;
+  padding: 14px 34px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.msme-cta-btn:hover {
+  background: #0f4c75;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.msme-cta {
+  padding-bottom: 50px;
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,0.2);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .msme-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .msme-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .msme-hero h1 {
+    font-size: 32px;
+  }
+}

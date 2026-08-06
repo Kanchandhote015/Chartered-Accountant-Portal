@@ -1,0 +1,269 @@
+/* ===============================
+   CONTAINER
+================================= */
+.services-admin-container {
+  padding: 20px;
+  padding-top: 1px;
+}
+
+.services-admin-container h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   HEADER (Title + Trash Button)
+================================= */
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.trash-btn {
+  background: #1e293b;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.trash-btn:hover {
+  background: #0f172a;
+}
+
+/* ===============================
+   FORM (Same as Gallery/News)
+================================= */
+.news-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.news-form input,
+.news-form textarea,
+.news-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  height: 42px;
+  background: #fff;
+}
+
+.news-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.add-btn {
+  background: #1e293b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 160px;
+}
+
+.add-btn:hover {
+  background: #050911;
+}
+
+/* ===============================
+   ICON SELECTION
+================================= */
+.icon-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon-btn {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.icon-btn:hover {
+  background: #e2e8f0;
+}
+
+.active-icon {
+  background: #1e293b;
+  color: white;
+  border: none;
+}
+
+/* ===============================
+   SECTION TITLE
+================================= */
+.services-section-title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* ===============================
+   GRID
+================================= */
+.services-grid-admin {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* ===============================
+   CARD
+================================= */
+.services-card-admin {
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.services-info h4 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.icon-tag {
+  font-size: 12px;
+  color: #555;
+  margin-top: 6px;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+.delete-btn {
+  width: 100%;
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px;
+  margin-top: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+.restore-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.restore-btn:hover {
+  background: #15803d;
+}
+
+.permanent-btn {
+  background: #7f1d1d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.permanent-btn:hover {
+  background: #5f1414;
+}
+
+.trash-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.trash-section {
+  margin-top: 60px;
+  padding: 30px;
+  background: #f9fafc;
+  border-radius: 12px;
+}
+
+.trash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.restore-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.permanent-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.char-counter {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  margin-top: -8px;
+  margin-bottom: 12px;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+}
